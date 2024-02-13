@@ -1,0 +1,1619 @@
+{
+    "type": "root",
+    "children": [
+        {
+            "identifier": "enumerator_id",
+            "title": "Enumerator ID",
+            "type": "text",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "consent_text",
+            "title": "My name is [Enumerator name] and I work for the [International Committee of the Red Cross / Name of National Society]. [ICRC / NS on behalf of the ICRC] is collecting [type of data] from [type of respondents] in [Area/Country]. We would like to ask you some questions about your [type of data]. The purpose of collecting this information is to support [ICRC and/or NS]’s operational planning and decisions regarding its [type of intervention] to assist the most vulnerable population in the area. The survey usually takes [length in minutes] to complete. Any information that you provide will only be used by [ICRC and/or NS] and is not subject to further disclosure. Your participation is voluntary. We need your genuine responses and hope that you agree to participate.",
+            "type": "text",
+            "readonly_rule": "always"
+        },
+        {
+            "identifier": "consent",
+            "title": "Do you consent to being interviewed?",
+            "type": "boolean",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "date",
+            "title": "Date",
+            "type": "date",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "name_of_the_form",
+            "title": "Form name",
+            "options": [
+                {
+                    "text": "Form name",
+                    "identifier": "Form name"
+                }
+            ],
+            "type": "select",
+            "required_rule": "always"
+        },
+        {
+            "identifier": "round_nmb",
+            "title": "Round number",
+            "options": [
+                {
+                    "text": "1",
+                    "identifier": "1"
+                },
+                {
+                    "text": "2",
+                    "identifier": "2"
+                },
+                {
+                    "text": "3",
+                    "identifier": "3"
+                }
+            ],
+            "type": "select",
+            "required_rule": "always",
+            "validate_expr": "NOTBLANK(round_nmb)"
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "h_o_hh_name",
+                    "title": "What is the name of the head of household",
+                    "type": "text",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "UID",
+                    "title": "UID",
+                    "type": "text",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "weeks_since_distribution",
+                    "title": "Number of weeks since the distribution",
+                    "type": "integer",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "h_o_hh_phone",
+                    "title": "What is the phone number of the head of household",
+                    "type": "phone_number",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "adm0",
+                    "title": "Country",
+                    "options": [
+                        {
+                            "text": "Burundi"
+                        },
+                        {
+                            "text": "CAR"
+                        },
+                        {
+                            "text": "DRC"
+                        },
+                        {
+                            "text": "Madagascar"
+                        },
+                        {
+                            "text": "Mozambique"
+                        },
+                        {
+                            "text": "Rwanda"
+                        },
+                        {
+                            "text": "Uganda"
+                        },
+                        {
+                            "text": "Eritrea"
+                        },
+                        {
+                            "text": "Ethiopia"
+                        },
+                        {
+                            "text": "Kenya"
+                        },
+                        {
+                            "text": "Somalia"
+                        },
+                        {
+                            "text": "South Sudan"
+                        },
+                        {
+                            "text": "Tanzania"
+                        },
+                        {
+                            "text": "Cameroon"
+                        },
+                        {
+                            "text": "Chad"
+                        },
+                        {
+                            "text": "Niger"
+                        },
+                        {
+                            "text": "Nigeria"
+                        },
+                        {
+                            "text": "Sudan"
+                        },
+                        {
+                            "text": "Algeria"
+                        },
+                        {
+                            "text": "Burkina Faso"
+                        },
+                        {
+                            "text": "Guinea-Bissau"
+                        },
+                        {
+                            "text": "Libya"
+                        },
+                        {
+                            "text": "Mali"
+                        },
+                        {
+                            "text": "Mauritania"
+                        },
+                        {
+                            "text": "Morocco"
+                        },
+                        {
+                            "text": "Senegal"
+                        },
+                        {
+                            "text": "Sierra Leone"
+                        },
+                        {
+                            "text": "Colombia"
+                        },
+                        {
+                            "text": "El Salvador"
+                        },
+                        {
+                            "text": "Guatemala"
+                        },
+                        {
+                            "text": "Haiti"
+                        },
+                        {
+                            "text": "Honduras"
+                        },
+                        {
+                            "text": "Mexico"
+                        },
+                        {
+                            "text": "Venezuela"
+                        },
+                        {
+                            "text": "Afghanistan"
+                        },
+                        {
+                            "text": "Bangladesh"
+                        },
+                        {
+                            "text": "Democratic People's Republic of Korea"
+                        },
+                        {
+                            "text": "Myanmar"
+                        },
+                        {
+                            "text": "Pakistan"
+                        },
+                        {
+                            "text": "Papua New Guinea"
+                        },
+                        {
+                            "text": "Philippines"
+                        },
+                        {
+                            "text": "Sri Lanka"
+                        },
+                        {
+                            "text": "Armenia"
+                        },
+                        {
+                            "text": "Azerbaijan"
+                        },
+                        {
+                            "text": "Georgia"
+                        },
+                        {
+                            "text": "Greece"
+                        },
+                        {
+                            "text": "Ukraine"
+                        },
+                        {
+                            "text": "Djibouti"
+                        },
+                        {
+                            "text": "Egypt"
+                        },
+                        {
+                            "text": "ILOT"
+                        },
+                        {
+                            "text": "Iran"
+                        },
+                        {
+                            "text": "Iraq"
+                        },
+                        {
+                            "text": "Jordan"
+                        },
+                        {
+                            "text": "Lebanon"
+                        },
+                        {
+                            "text": "Syria"
+                        },
+                        {
+                            "text": "Yemen"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "adm1",
+                    "title": "Region",
+                    "options": [
+                        {
+                            "text": "Region 1"
+                        },
+                        {
+                            "text": "Region 2"
+                        },
+                        {
+                            "text": "Region 3"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "adm2",
+                    "title": "Sub Region",
+                    "options": [
+                        {
+                            "text": "Sub Region 1"
+                        },
+                        {
+                            "text": "Sub Region 2"
+                        },
+                        {
+                            "text": "Sub Region 3"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "address_street",
+                    "title": "Address - Street name",
+                    "type": "text",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "address_number",
+                    "title": "Address - Number",
+                    "type": "text",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "address_notes",
+                    "title": "Address - Notes on location",
+                    "type": "text",
+                    "required_rule": "always",
+                    "multi_line": true
+                }
+            ],
+            "identifier": "respondant_identity",
+            "title": "Identity of the respondant",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "gender",
+                    "title": "Gender of respondent",
+                    "options": [
+                        {
+                            "text": "Male",
+                            "identifier": "Musko"
+                        },
+                        {
+                            "text": "Female",
+                            "identifier": "Zensko"
+                        },
+                        {
+                            "text": "Other",
+                            "identifier": "Drugo"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "customOptionIdentifiers": true
+                },
+                {
+                    "identifier": "h_o_hh",
+                    "title": "Are you the head of household?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "h_o_hh_gender",
+                    "title": "If no, what is the gender of the head of household?",
+                    "options": [
+                        {
+                            "text": "Male",
+                            "identifier": "Musko"
+                        },
+                        {
+                            "text": "Female",
+                            "identifier": "Zensko"
+                        },
+                        {
+                            "text": "Other",
+                            "identifier": "Drugo"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "h_o_hh = false"
+                },
+                {
+                    "identifier": "h_o_hh_age",
+                    "title": "How old is the head of household",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "validate_expr": "h_o_hh_age > 0"
+                },
+                {
+                    "identifier": "h_o_hh_marital_status",
+                    "title": "What is the marital status of the head of household",
+                    "options": [
+                        {
+                            "text": "Married",
+                            "identifier": "Married"
+                        },
+                        {
+                            "text": "Separated",
+                            "identifier": "Separated"
+                        },
+                        {
+                            "text": "Divorced",
+                            "identifier": "Divorced"
+                        },
+                        {
+                            "text": "Widowed",
+                            "identifier": "Widowed"
+                        },
+                        {
+                            "text": "Single",
+                            "identifier": "Single"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "tribe",
+                    "title": "What is your tribe [please contextualize the answer options to fit the situation on the ground]",
+                    "options": [
+                        {
+                            "text": "Tribe 1"
+                        },
+                        {
+                            "text": "Tribe 2"
+                        },
+                        {
+                            "text": "Tribe 3"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "ethnic_cult_identity",
+                    "title": "Ethnic / Cultural Identity",
+                    "options": [
+                        {
+                            "text": "Minority",
+                            "identifier": "Minority"
+                        },
+                        {
+                            "text": "Majority",
+                            "identifier": "Majority"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "hint": "DO NOT ask the beneficiary. Should be answered by enumerator"
+                },
+                {
+                    "identifier": "male_child",
+                    "title": "Male Members of the Household aged 0-17",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "validate_expr": "male_child >= 0"
+                },
+                {
+                    "identifier": "male_adult",
+                    "title": "Male Members of the Household aged 18-64",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "validate_expr": "male_adult >= 0"
+                },
+                {
+                    "identifier": "male_old",
+                    "title": "Male Members of the Household aged 65+",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "validate_expr": "male_old >= 0"
+                },
+                {
+                    "identifier": "female_child",
+                    "title": "Female Members of the Household aged 0-17",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "validate_expr": "female_child >= 0"
+                },
+                {
+                    "identifier": "female_adult",
+                    "title": "Female Members of the Household aged 18-64",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "validate_expr": "female_adult >= 0"
+                },
+                {
+                    "identifier": "female_old",
+                    "title": "Female Members of the Household aged 65+",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "validate_expr": "female_old >= 0"
+                },
+                {
+                    "identifier": "female_pregnant",
+                    "title": "How many women in this household are currently pregnant or lactating?",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "validate_expr": "female_pregnant >= 0"
+                },
+                {
+                    "identifier": "disabled",
+                    "title": "How many people in this household have a chronic disability/illness?",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "hint": "A disability/illness they have had for 3 months or more that affects their ability to work",
+                    "validate_expr": "disabled >= 0"
+                },
+                {
+                    "identifier": "residence_status",
+                    "title": "Displacement Status",
+                    "options": [
+                        {
+                            "text": "Host",
+                            "identifier": "Host"
+                        },
+                        {
+                            "text": "Resident",
+                            "identifier": "Resident"
+                        },
+                        {
+                            "text": "IDP",
+                            "identifier": "IDP"
+                        },
+                        {
+                            "text": "Refugee",
+                            "identifier": "Refugee"
+                        },
+                        {
+                            "text": "Returnee",
+                            "identifier": "Returnee"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "origin_adm0",
+                    "title": "Country of Origin",
+                    "options": [
+                        {
+                            "text": "Burundi"
+                        },
+                        {
+                            "text": "CAR"
+                        },
+                        {
+                            "text": "DRC"
+                        },
+                        {
+                            "text": "Madagascar"
+                        },
+                        {
+                            "text": "Mozambique"
+                        },
+                        {
+                            "text": "Rwanda"
+                        },
+                        {
+                            "text": "Uganda"
+                        },
+                        {
+                            "text": "Eritrea"
+                        },
+                        {
+                            "text": "Ethiopia"
+                        },
+                        {
+                            "text": "Kenya"
+                        },
+                        {
+                            "text": "Somalia"
+                        },
+                        {
+                            "text": "South Sudan"
+                        },
+                        {
+                            "text": "Tanzania"
+                        },
+                        {
+                            "text": "Cameroon"
+                        },
+                        {
+                            "text": "Chad"
+                        },
+                        {
+                            "text": "Niger"
+                        },
+                        {
+                            "text": "Nigeria"
+                        },
+                        {
+                            "text": "Sudan"
+                        },
+                        {
+                            "text": "Algeria"
+                        },
+                        {
+                            "text": "Burkina Faso"
+                        },
+                        {
+                            "text": "Guinea-Bissau"
+                        },
+                        {
+                            "text": "Libya"
+                        },
+                        {
+                            "text": "Mali"
+                        },
+                        {
+                            "text": "Mauritania"
+                        },
+                        {
+                            "text": "Morocco"
+                        },
+                        {
+                            "text": "Senegal"
+                        },
+                        {
+                            "text": "Sierra Leone"
+                        },
+                        {
+                            "text": "Colombia"
+                        },
+                        {
+                            "text": "El Salvador"
+                        },
+                        {
+                            "text": "Guatemala"
+                        },
+                        {
+                            "text": "Haiti"
+                        },
+                        {
+                            "text": "Honduras"
+                        },
+                        {
+                            "text": "Mexico"
+                        },
+                        {
+                            "text": "Venezuela"
+                        },
+                        {
+                            "text": "Afghanistan"
+                        },
+                        {
+                            "text": "Bangladesh"
+                        },
+                        {
+                            "text": "Democratic People's Republic of Korea"
+                        },
+                        {
+                            "text": "Myanmar"
+                        },
+                        {
+                            "text": "Pakistan"
+                        },
+                        {
+                            "text": "Papua New Guinea"
+                        },
+                        {
+                            "text": "Philippines"
+                        },
+                        {
+                            "text": "Sri Lanka"
+                        },
+                        {
+                            "text": "Armenia"
+                        },
+                        {
+                            "text": "Azerbaijan"
+                        },
+                        {
+                            "text": "Georgia"
+                        },
+                        {
+                            "text": "Greece"
+                        },
+                        {
+                            "text": "Ukraine"
+                        },
+                        {
+                            "text": "Djibouti"
+                        },
+                        {
+                            "text": "Egypt"
+                        },
+                        {
+                            "text": "ILOT"
+                        },
+                        {
+                            "text": "Iran"
+                        },
+                        {
+                            "text": "Iraq"
+                        },
+                        {
+                            "text": "Jordan"
+                        },
+                        {
+                            "text": "Lebanon"
+                        },
+                        {
+                            "text": "Syria"
+                        },
+                        {
+                            "text": "Yemen"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "OR(OR(residence_status = \"Refugee\",residence_status = \"IDP\"),residence_status = \"Returnee\")"
+                },
+                {
+                    "identifier": "origin_adm1",
+                    "title": "Region of Origin",
+                    "options": [
+                        {
+                            "text": "Region 1"
+                        },
+                        {
+                            "text": "Region 2"
+                        },
+                        {
+                            "text": "Region 3"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "OR(OR(residence_status = \"Refugee\",residence_status = \"IDP\"),residence_status = \"Returnee\")"
+                },
+                {
+                    "identifier": "origin_adm2",
+                    "title": "Sub Region of Origin",
+                    "options": [
+                        {
+                            "text": "Sub Region 1"
+                        },
+                        {
+                            "text": "Sub Region 2"
+                        },
+                        {
+                            "text": "Sub Region 3"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "OR(OR(residence_status = \"Refugee\",residence_status = \"IDP\"),residence_status = \"Returnee\")"
+                },
+                {
+                    "identifier": "origin_adm3",
+                    "title": "Village of Origin",
+                    "options": [
+                        {
+                            "text": "Village 1"
+                        },
+                        {
+                            "text": "Village 2"
+                        },
+                        {
+                            "text": "Village 3"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "OR(OR(residence_status = \"Refugee\",residence_status = \"IDP\"),residence_status = \"Returnee\")"
+                }
+            ],
+            "identifier": "demographic_information",
+            "title": "Demographic Information",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "assist_check",
+                    "title": "Did the household receive the [type of assistance]?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "assistance_type",
+                    "title": "If the respondent has received assistance, could you please specify what type of assistance(s) respondend received?",
+                    "options": [
+                        {
+                            "text": "Agro(Seeds and Tools)",
+                            "identifier": "Agro(Seeds and Tools)"
+                        },
+                        {
+                            "text": "Food",
+                            "identifier": "Food"
+                        },
+                        {
+                            "text": "Cash",
+                            "identifier": "Cash"
+                        },
+                        {
+                            "text": "EHI",
+                            "identifier": "EHI"
+                        },
+                        {
+                            "text": "Vouchers",
+                            "identifier": "Vouchers"
+                        },
+                        {
+                            "text": "In-kind",
+                            "identifier": "In-kind"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "multiple": true,
+                    "visible_rule": "when",
+                    "visible_expr": "assist_check = true"
+                },
+                {
+                    "identifier": "why_not_assisted",
+                    "title": "If no, why?",
+                    "options": [
+                        {
+                            "text": "I was not informed",
+                            "identifier": "I was not informed"
+                        },
+                        {
+                            "text": "I had to work and could not go",
+                            "identifier": "I had to work and could not go"
+                        },
+                        {
+                            "text": "My name was not in the list",
+                            "identifier": "My name was not in the list"
+                        },
+                        {
+                            "text": "The distribution was not safe",
+                            "identifier": "The distribution was not safe"
+                        },
+                        {
+                            "text": "I could not afford the travel cost",
+                            "identifier": "I could not afford the travel cost"
+                        },
+                        {
+                            "text": "Other",
+                            "identifier": "Other"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "assist_check = false"
+                },
+                {
+                    "identifier": "why_not_assisted_other",
+                    "title": "If Other, specify",
+                    "type": "text",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "why_not_assisted = \"Other\""
+                },
+                {
+                    "identifier": "resp_check",
+                    "title": "Is the respondent the person who was the main responsible to receive the [type of assistance] (at the distribution / encashment point)? ",
+                    "type": "boolean",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "assist_check = true"
+                },
+                {
+                    "identifier": "qty_check",
+                    "title": "How much [quantity/value of assistance] did your household receive over [the length of programme / last distribution]",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "assist_check = true"
+                },
+                {
+                    "identifier": "freq_check",
+                    "title": "How [often/many times] did your household receive assistance over [the length of programme / last distribution]",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "assist_check = true"
+                },
+                {
+                    "identifier": "assistance_duration",
+                    "title": "How many weeks did it take the household to consume [assistance type] received over [the length of programme / last distribution]?",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "assist_check = true"
+                }
+            ],
+            "identifier": "assistance_verification",
+            "title": "Assistance verification",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "distribution_distance",
+                    "title": "How far is the [distribution / encashment] point? (in kilometers)",
+                    "type": "integer",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "distribution_time",
+                    "title": "How long does it take you to get to the [distribution / encashment] point? (minutes)",
+                    "type": "integer",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "transport_means",
+                    "title": "How do you usually get there?",
+                    "options": [
+                        {
+                            "text": "Walk",
+                            "identifier": "Walk"
+                        },
+                        {
+                            "text": "Own vehicle",
+                            "identifier": "Own vehicle"
+                        },
+                        {
+                            "text": "Shared or borrowed vehicle",
+                            "identifier": "Shared or borrowed vehicle"
+                        },
+                        {
+                            "text": "Public transport",
+                            "identifier": "Public transport"
+                        },
+                        {
+                            "text": "Other",
+                            "identifier": "Other"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "transport_cost",
+                    "title": "How much does it cost you to travel there (either in gas or in payment for transport)? (local currency)",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "transport_means <> \"Walk\""
+                },
+                {
+                    "identifier": "physical_access",
+                    "title": "Are you ever not able to go to the [distribution / encashment / market] because it is either too far or too expensive?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                }
+            ],
+            "identifier": "access_to_distribution_point",
+            "title": "Access to distribution point",
+            "visible_rule": "when",
+            "visible_expr": ".assistance_verification.assist_check = true",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "market_distance",
+                    "title": "How far is the market? (in kilometers)",
+                    "type": "integer",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "market_time",
+                    "title": "How long does it take you to get to the market? (minutes)",
+                    "type": "integer",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "market_transport",
+                    "title": "How do you usually get there?",
+                    "options": [
+                        {
+                            "text": "Walk",
+                            "identifier": "Walk"
+                        },
+                        {
+                            "text": "Own vehicle",
+                            "identifier": "Own vehicle"
+                        },
+                        {
+                            "text": "Shared or borrowed vehicle",
+                            "identifier": "Shared or borrowed vehicle"
+                        },
+                        {
+                            "text": "Public transport",
+                            "identifier": "Public transport"
+                        },
+                        {
+                            "text": "Other",
+                            "identifier": "Other"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "market_transport_cost",
+                    "title": "How much does it cost you to travel there (either in gas or in payment for transport)? (local currency)",
+                    "type": "integer",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "market_transport <> \"Walk\""
+                },
+                {
+                    "identifier": "market_too_far_expensive",
+                    "title": "Are you ever not able to go to the market because it is either too far or too expensive?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                }
+            ],
+            "identifier": "access_to_market",
+            "title": "Access to market",
+            "visible_rule": "when",
+            "visible_expr": ".assistance_verification.assist_check = true",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "safe_home_site",
+                    "title": "Do you feel safe going from your home to the [distribution / encashment] point?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "safe_home_site_reason",
+                    "title": "If no, why?",
+                    "type": "text",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "safe_home_site = false"
+                },
+                {
+                    "identifier": "safe_site",
+                    "title": "Do you feel safe while you are at the [distribution / encashment] point?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "safe_site_reason",
+                    "title": "If no, why?",
+                    "type": "text",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "safe_site = false"
+                },
+                {
+                    "identifier": "safe_site_home",
+                    "title": "Do you feel safe going home from the [distribution / encashment] point?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "safe_site_home_reason",
+                    "title": "If no, why?",
+                    "type": "text",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "safe_site_home = false"
+                }
+            ],
+            "identifier": "programme_site_safety",
+            "title": "Programme site safety",
+            "visible_rule": "when",
+            "visible_expr": "OR(.assistance_verification.assist_check = true,.assistance_verification.why_not_assisted = \"The distribution was not safe\")",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "awareness_organisation",
+                    "title": "Do you know what organization provided the assistance?",
+                    "options": [
+                        {
+                            "text": "ICRC",
+                            "identifier": "ICRC"
+                        },
+                        {
+                            "text": "Red Cross/Red Crescent",
+                            "identifier": "Red Cross/Red Crescent"
+                        },
+                        {
+                            "text": "Government",
+                            "identifier": "Government"
+                        },
+                        {
+                            "text": "Other",
+                            "identifier": "Other"
+                        },
+                        {
+                            "text": "Don't know",
+                            "identifier": "Don't know"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "icrc_service_aware",
+                    "title": "Do you feel you have been told about the ICRC services available to you?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "icrc_service_understand",
+                    "title": "Did you understand what you were told?",
+                    "type": "boolean",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "icrc_service_aware = true"
+                }
+            ],
+            "identifier": "communication",
+            "title": "Communication",
+            "visible_rule": "when",
+            "visible_expr": ".assistance_verification.assist_check = true",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "assistance_quantity",
+                    "title": "The amount of [assistance type] received was sufficient",
+                    "options": [
+                        {
+                            "text": "Strongly Agree",
+                            "identifier": "Strongly Agree"
+                        },
+                        {
+                            "text": "Agree",
+                            "identifier": "Agree"
+                        },
+                        {
+                            "text": "Neutral",
+                            "identifier": "Neutral"
+                        },
+                        {
+                            "text": "Disagree",
+                            "identifier": "Disagree"
+                        },
+                        {
+                            "text": "Strongly Disagree",
+                            "identifier": "Strongly Disagree"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "low_quantity_item",
+                    "title": "If disagree or strongly disagree, which [assistance type items] do you think the amount given to you was not sufficient?",
+                    "options": [
+                        {
+                            "text": "Blanket",
+                            "identifier": "Blanket"
+                        },
+                        {
+                            "text": "Cooking pot",
+                            "identifier": "Cooking pot"
+                        },
+                        {
+                            "text": "Disposable sanitary pads",
+                            "identifier": "Disposable sanitary pads"
+                        },
+                        {
+                            "text": "Hoe",
+                            "identifier": "Hoe"
+                        },
+                        {
+                            "text": "Sickle",
+                            "identifier": "Sickle"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "OR(assistance_quantity = \"Strongly Disagree\",assistance_quantity = \"Disagree\")"
+                },
+                {
+                    "identifier": "assistance_frequency",
+                    "title": "The frequency of the [assistance type] was good",
+                    "options": [
+                        {
+                            "text": "Strongly Agree",
+                            "identifier": "Strongly Agree"
+                        },
+                        {
+                            "text": "Agree",
+                            "identifier": "Agree"
+                        },
+                        {
+                            "text": "Neutral",
+                            "identifier": "Neutral"
+                        },
+                        {
+                            "text": "Disagree",
+                            "identifier": "Disagree"
+                        },
+                        {
+                            "text": "Strongly Disagree",
+                            "identifier": "Strongly Disagree"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "assistance_quality",
+                    "title": "The quality of [assistance type / service provider] was good",
+                    "options": [
+                        {
+                            "text": "Strongly Agree",
+                            "identifier": "Strongly Agree"
+                        },
+                        {
+                            "text": "Agree",
+                            "identifier": "Agree"
+                        },
+                        {
+                            "text": "Neutral",
+                            "identifier": "Neutral"
+                        },
+                        {
+                            "text": "Disagree",
+                            "identifier": "Disagree"
+                        },
+                        {
+                            "text": "Strongly Disagree",
+                            "identifier": "Strongly Disagree"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "low_quality_item",
+                    "title": "If disagree or strongly disagree, please indicate the [assistance type items] that you received with poor quality",
+                    "options": [
+                        {
+                            "text": "Blanket",
+                            "identifier": "Blanket"
+                        },
+                        {
+                            "text": "Cooking pot",
+                            "identifier": "Cooking pot"
+                        },
+                        {
+                            "text": "Disposable sanitary pads",
+                            "identifier": "Disposable sanitary pads"
+                        },
+                        {
+                            "text": "Hoe",
+                            "identifier": "Hoe"
+                        },
+                        {
+                            "text": "Sickle",
+                            "identifier": "Sickle"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "OR(assistance_quality = \"Strongly Disagree\",assistance_quality = \"Disagree\")"
+                },
+                {
+                    "identifier": "assistance_delivery",
+                    "title": "The [delivery mechanism / transfer solution] functioned well",
+                    "options": [
+                        {
+                            "text": "Strongly Agree",
+                            "identifier": "Strongly Agree"
+                        },
+                        {
+                            "text": "Agree",
+                            "identifier": "Agree"
+                        },
+                        {
+                            "text": "Neutral",
+                            "identifier": "Neutral"
+                        },
+                        {
+                            "text": "Disagree",
+                            "identifier": "Disagree"
+                        },
+                        {
+                            "text": "Strongly Disagree",
+                            "identifier": "Strongly Disagree"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "assistance_behaviour",
+                    "title": "The behaviour of staff at the [distribution / encashment] point was good ",
+                    "options": [
+                        {
+                            "text": "Strongly Agree",
+                            "identifier": "Strongly Agree"
+                        },
+                        {
+                            "text": "Agree",
+                            "identifier": "Agree"
+                        },
+                        {
+                            "text": "Neutral",
+                            "identifier": "Neutral"
+                        },
+                        {
+                            "text": "Disagree",
+                            "identifier": "Disagree"
+                        },
+                        {
+                            "text": "Strongly Disagree",
+                            "identifier": "Strongly Disagree"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "appropriate_germination",
+                    "title": "The germination rate was good",
+                    "options": [
+                        {
+                            "text": "Strongly Agree",
+                            "identifier": "Strongly Agree"
+                        },
+                        {
+                            "text": "Agree",
+                            "identifier": "Agree"
+                        },
+                        {
+                            "text": "Neutral",
+                            "identifier": "Neutral"
+                        },
+                        {
+                            "text": "Disagree",
+                            "identifier": "Disagree"
+                        },
+                        {
+                            "text": "Strongly Disagree",
+                            "identifier": "Strongly Disagree"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "CONTAINS(.assistance_verification.assistance_type,\"Agro(Seeds and Tools)\")"
+                },
+                {
+                    "identifier": "low_germination",
+                    "title": "If disagree or strongly disagree, please indicate the [assistance type items] that were not useful for your household",
+                    "options": [
+                        {
+                            "text": "Maize",
+                            "identifier": "Maize"
+                        },
+                        {
+                            "text": "Sorghum",
+                            "identifier": "Sorghum"
+                        },
+                        {
+                            "text": "Wheat",
+                            "identifier": "Wheat"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "OR(appropriate_germination = \"Strongly Disagree\",appropriate_germination = \"Disagree\")"
+                },
+                {
+                    "identifier": "assistance_relevant",
+                    "title": "The [assistance type] received was [useful / helpful] for [myself/my household] / [my livelihood]",
+                    "options": [
+                        {
+                            "text": "Strongly Agree",
+                            "identifier": "Strongly Agree"
+                        },
+                        {
+                            "text": "Agree",
+                            "identifier": "Agree"
+                        },
+                        {
+                            "text": "Neutral",
+                            "identifier": "Neutral"
+                        },
+                        {
+                            "text": "Disagree",
+                            "identifier": "Disagree"
+                        },
+                        {
+                            "text": "Strongly Disagree",
+                            "identifier": "Strongly Disagree"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "Item_not_useful",
+                    "title": "If disagree or strongly disagree, please indicate the [assistance type items] that were not useful for your household",
+                    "options": [
+                        {
+                            "text": "Blanket",
+                            "identifier": "Blanket"
+                        },
+                        {
+                            "text": "Cooking pot",
+                            "identifier": "Cooking pot"
+                        },
+                        {
+                            "text": "Disposable sanitary pads",
+                            "identifier": "Disposable sanitary pads"
+                        },
+                        {
+                            "text": "Hoe",
+                            "identifier": "Hoe"
+                        },
+                        {
+                            "text": "Sickle",
+                            "identifier": "Sickle"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "OR(assistance_relevant = \"Strongly Disagree\",assistance_relevant = \"Disagree\")"
+                },
+                {
+                    "identifier": "basic_needs_perception",
+                    "title": "The support provided to you by the [assistance type] allows you to cover [basic needs/objective]",
+                    "options": [
+                        {
+                            "text": "Strongly Agree",
+                            "identifier": "Strongly Agree"
+                        },
+                        {
+                            "text": "Agree",
+                            "identifier": "Agree"
+                        },
+                        {
+                            "text": "Neutral",
+                            "identifier": "Neutral"
+                        },
+                        {
+                            "text": "Disagree",
+                            "identifier": "Disagree"
+                        },
+                        {
+                            "text": "Strongly Disagree",
+                            "identifier": "Strongly Disagree"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "timely_response_perception",
+                    "title": "Did you receive the [assistance type] distributed in time to respond to your [basic needs/objective]?",
+                    "options": [
+                        {
+                            "text": "Early",
+                            "identifier": "Early"
+                        },
+                        {
+                            "text": "On time",
+                            "identifier": "On time"
+                        },
+                        {
+                            "text": "Late",
+                            "identifier": "Late"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always"
+                }
+            ],
+            "identifier": "perception_of_appropriateness_of_icrc_assistance",
+            "title": "Perception of Appropriateness of ICRC Assistance",
+            "visible_rule": "when",
+            "visible_expr": ".assistance_verification.assist_check = true",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "targeting_awareness",
+                    "title": "What were the selection criteria for receiving this assistance? ",
+                    "options": [
+                        {
+                            "text": "Aware",
+                            "identifier": "Da"
+                        },
+                        {
+                            "text": "Not Aware",
+                            "identifier": "Ne"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "hint": "Enumerators will ask this question and tick the box if the respondent answers correctly."
+                },
+                {
+                    "identifier": "icrc_targeting_good",
+                    "title": "Do you think that the [services ICRC is providing] [is/are] reaching the [households/people] most in need?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "icrc_targeting_improvement",
+                    "title": "How can ICRC do better in reaching the households most in need?",
+                    "type": "text",
+                    "required_rule": "always",
+                    "multi_line": true
+                },
+                {
+                    "identifier": "registration_problems",
+                    "title": "Did the household face any problems in registering for the programme?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "registration_bribe",
+                    "title": "In exchange for being included in the assistance, did you have to pay any fee, or give a favour in return? ",
+                    "type": "boolean",
+                    "required_rule": "always"
+                }
+            ],
+            "identifier": "perception_of_registration_process_and_targeting",
+            "title": "Perception of registration process and targeting",
+            "visible_rule": "when",
+            "visible_expr": ".assistance_verification.assist_check = true",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "type": "group",
+            "children": [
+                {
+                    "identifier": "icrc_feedback",
+                    "title": "If you have any suggestions or complaints about ICRC services/projects, do you know how to contact ICRC?",
+                    "type": "boolean",
+                    "required_rule": "always"
+                },
+                {
+                    "identifier": "icrc_feedback_mechanism",
+                    "title": "If yes, how do you do this? (Do not read the options, listen and check all that apply)",
+                    "options": [
+                        {
+                            "text": "Speak to a volunteer",
+                            "identifier": "Speak to a volunteer"
+                        },
+                        {
+                            "text": "Write a letter",
+                            "identifier": "Write a letter"
+                        },
+                        {
+                            "text": "Go to the office",
+                            "identifier": "Go to the office"
+                        },
+                        {
+                            "text": "Call the hotline number",
+                            "identifier": "Call the hotline number"
+                        },
+                        {
+                            "text": "Call the office number",
+                            "identifier": "Call the office number"
+                        },
+                        {
+                            "text": "Other",
+                            "identifier": "Other"
+                        }
+                    ],
+                    "type": "select",
+                    "required_rule": "always",
+                    "multiple": true,
+                    "visible_rule": "when",
+                    "visible_expr": "icrc_feedback = true"
+                },
+                {
+                    "identifier": "icrc_feedback_mechanism_other",
+                    "title": "If Other, specify",
+                    "type": "text",
+                    "required_rule": "always",
+                    "visible_rule": "when",
+                    "visible_expr": "CONTAINS(icrc_feedback_mechanism,\"Other\")"
+                }
+            ],
+            "identifier": "feedback_mechanisms",
+            "title": "Feedback mechanisms",
+            "minOccurs": 1,
+            "maxOccurs": 1
+        },
+        {
+            "identifier": "additional_comment",
+            "title": "Do you have any additional feedback for the ICRC?",
+            "type": "text",
+            "multi_line": true
+        }
+    ],
+    "title": "PDM_json_to_test",
+    "description": "form description"
+}
